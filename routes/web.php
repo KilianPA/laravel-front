@@ -16,10 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
-    Route::get('/users', 'UserController@getAllUsers');
+    Route::get('/', 'UserController@getAllUsers');
     Route::get('/users/store', 'UserController@create');
     Route::post('/users/store', 'UserController@store');
     Route::post('/users/update/{id}', 'UserController@update');

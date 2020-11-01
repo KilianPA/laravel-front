@@ -1,6 +1,6 @@
 @if(Session::has('success'))
     <div class="alert alert-success">
-        {{ Session::get('success') }} <a href="{{ url('users') }}">Retour à l'accueil</a>
+        {{ Session::get('success') }} <a href="{{ url('/') }}">Retour à l'accueil</a>
         @php
             Session::forget('success');
         @endphp
