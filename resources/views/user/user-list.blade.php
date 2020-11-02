@@ -9,6 +9,20 @@
             <button class="btn btn-primary" type="button" onclick="window.location='{{ url('users/store') }}'">Ajouter un utilisateur</button>
         </div>
     </div>
+    <div class="row border-top p-3">
+        <div class="col-2 text-black-50">
+            Nom
+        </div>
+        <div class="col-2 text-black-50">
+            Prénom
+        </div>
+        <div class="col-2 text-black-50">
+            E-mail
+        </div>
+        <div class="col-2 text-black-50">
+            Date de naissance
+        </div>
+    </div>
     @forelse ($data['data'] as $user)
         <div class="row border-top p-3">
             <div class="col-2">
