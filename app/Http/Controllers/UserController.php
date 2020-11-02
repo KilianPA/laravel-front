@@ -152,7 +152,7 @@ class UserController extends Controller
     public function delete ($id) {
         $response = $this->clientApi->request('delete', 'users/' . $id);
         if ($response->getStatusCode() == 204) {
-            return redirect()->to('users');
+            return redirect()->to('/');
         }
     }
 }
