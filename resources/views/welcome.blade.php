@@ -34,5 +34,6 @@
                 </div>
             @endif
         </div>
+    {{ phpinfo() }}
     </body>
 </html>
