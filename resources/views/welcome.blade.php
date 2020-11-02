@@ -28,6 +28,10 @@
                 <div class="content-container">
                     @yield('content')
                 </div>
+            @else
+                <div class="content-container">
+                    @yield('login-form')
+                </div>
             @endif
         </div>
     </body>

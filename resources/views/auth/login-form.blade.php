@@ -1,6 +1,6 @@
 @extends('welcome')
 
-@section('content')
+@section('login-form')
     <div class="container-login">
         <div class="text-center">
             <h3> Connexion </h3>
